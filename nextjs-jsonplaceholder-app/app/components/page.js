@@ -3,14 +3,17 @@
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
-async function getPost(id) {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
-    return res.json();
-}
+
 
 function Display() {
+    
 
- 
+    return (
+        <div>
+            <h1>{post.title}</h1>
+            <p>{post.body}</p>
+        </div>
+    );
 }
 
 export default Display;

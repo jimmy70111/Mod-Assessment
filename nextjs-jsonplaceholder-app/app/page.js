@@ -21,7 +21,7 @@ async function fetch10posts() {
         <ul>
           {posts.map((post) => (
             <li key={post.id}>
-               <Link href={`/single-display?id=${post.id}`}>
+               <Link href={`/components?id=${post.id}`}>
 
                 {post.title}
               </Link>
