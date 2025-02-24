@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getPost } from "./api";
+import { getPost } from "../Api/getPost";
 
 
 

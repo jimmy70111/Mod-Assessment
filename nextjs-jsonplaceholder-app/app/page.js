@@ -1,19 +1,9 @@
 import Link from "next/link";
-
-
-
-// Limited the post amount to 10
-async function fetch10posts() {
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=10");
-    const posts = await res.json();
-
-    return posts;
-  }
-
+import { fetchPosts } from "./Api/fetchPosts";
 
 
   const HomePage = async () => {
-    const posts = await fetch10posts();
+    const posts = await fetchPosts();
 
     return (
       <div>
@@ -21,7 +11,7 @@ async function fetch10posts() {
         <ul>
           {posts.map((post) => (
             <li key={post.id}>
-               <Link href={`/components?id=${post.id}`}>
+               <Link href={`/Post_Details?id=${post.id}`}>
 
                 {post.title}
               </Link>
