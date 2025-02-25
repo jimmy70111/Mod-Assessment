@@ -12,7 +12,7 @@ function Display() {
     const content = fetching(id); // fetching post details from the apI
 
    if (!content) return (
-        <p className="text-center  text-gray-600">Loading...</p>
+        <p className="text-center  text-white">Loading...</p>
     );
 
     
