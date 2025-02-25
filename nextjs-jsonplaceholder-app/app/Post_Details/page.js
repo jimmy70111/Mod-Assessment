@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { fetching } from "./fetching"; 
 
 function Display() {
+    
     const router = useRouter();
     const searchParams = useSearchParams();
     const id = searchParams.get("id"); 
@@ -17,8 +18,8 @@ function Display() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 ">
             <div className="max-w-lg bg-white p-6 rounded-lg shadow-1g">
-                <h1 className="text-2xl font-bold text-gray-800">{content.title}</h1>
-                <p className="mt-7 text-gray-700">{content.body}</p>
+                <h1 className="text-2xl font-bold text-gray-800  text-center">{content.title}</h1>
+                <p className="mt-7 text-gray-700 text-center">{content.body}</p>
                 
                 <button  
                     className="mt-10 px-6 py-2 bg-black text-white font-bold rounded-full shadow-md transition"
