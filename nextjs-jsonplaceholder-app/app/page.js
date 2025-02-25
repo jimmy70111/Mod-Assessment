@@ -10,14 +10,16 @@ const HomePage = async () => {
 
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <div className="max-w-3g bg-white p-5 rounded-lg shadow-lg">
-        <h1 className="text-2xl font-bold text-gray-800 text-center">10 Posts</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4">
+      <div className="max-w-3g bg-white p-6 rounded-lg shadow-lg">
+        <h1 className="text-3xl font-bold text-gray-800 text-center mb-3">10 Posts</h1>
         {/* Pass post ID as a link to the Post_Details */}
-        <ul className="mt-4 text-xl text-blue-600 font-serif  list-disc list-inside marker:text-black underline">
+        <ul className="space-y-2">
           {posts.map((post) => (
-            <li key={post.id}>
-              <Link href={`/Post_Details?id=${post.id}`}>{post.title}</Link>
+            <li key={post.id} className="border-b border-gray pb-3 ">
+              <Link href={`/Post_Details?id=${post.id}`}
+              className="block text-lg font-semibold text-blue-600 hover:text-blue-800 "
+              >{post.title}</Link>
             </li>
           ))}
         </ul>
