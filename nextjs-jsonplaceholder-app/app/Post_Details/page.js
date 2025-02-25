@@ -10,7 +10,7 @@ function Display() {
     const content = fetching(id); 
 
     // testing content
-    if (!content) return <p>Error</p>;
+    if (!content) return <p> Loading...</p>;
 
 
     
