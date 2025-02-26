@@ -1,5 +1,7 @@
 # Mod-Assessment
 
+Vercel Deployment- https://nextjs-jsonplaceholder-app.vercel.app/
+
 ## How to Run This Application Locally
 
 ### Step 1: Clone the Repository
